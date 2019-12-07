@@ -1,5 +1,7 @@
 #!/bin/bash
-mkdir build/
+if [! -d "build" ]; then
+    mkdir build/
+fi
 if [ $? != 0 ]; then
   exit 1
 fi
